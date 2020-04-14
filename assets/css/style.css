@@ -20,13 +20,17 @@ body{
   font-family: sans-serif;
   color: #212121;
   line-height: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* control shift / for the comment; */
+}
+header{
+  height: 350px;
 }
 /*em 
 1em = 100% of the parent
 1.5em = 150% of the parent 
 1rem = 100% of the root in our case html*/
-/*LINKS*/
 a {
   text-decoration: none;
   color:hotpink;
@@ -51,10 +55,18 @@ input {
 }
 h1, h2, h3 {
   font-weight: bold;
+  margin-top: 30px;
+  
 }
 
 p {
   margin-bottom: 1em; /*16px*/
+  gap: 5;
+  line-height: 2;
+}
+footer { 
+  position: center center;
+  margin-left: 100px;
 }
 /*HELPER CLASSES 
 ------------------------------*/
@@ -77,7 +89,8 @@ p {
 
 .VAlign-t { vertical-align: top; }
 .VAlign-b { vertical-align: bottom; }
-.VAlign-m { vertical-align: middle; }
+.VAlign-m { vertical-align: middle;}
+
 
 .uppercase {text-transform: uppercase;}
 .lowercase {text-transform: lowercase;}
@@ -85,9 +98,11 @@ p {
 
 
 .fs-1 {font-size: 1rem;}
+.fs-2 {font-size: 2rem;}
 .lh-1 {line-height: 1;}
 .lh-1-2 {line-height: 1.2;}
-.red {color: red;}
+.gap {gap: 60px;}
+
 /*margin
 ------------------*/
 .m-t-1 {
@@ -113,6 +128,9 @@ p {
 }
 /*PADDING
 ------------------*/
+.p-t-4 {
+  padding-top: 20px;
+}
 /*FLEX
 ------------------*/
 /*BACKGROUNDS
@@ -122,9 +140,9 @@ p {
 
 /*LAYOUT 
 ------------------------*/
-
-
-
-
+ul{float: right; word-spacing: 30px;}
+ul li{display: inline-block; }
+.header {background-image: url(../img/sta.jpg);}
+#whitesmoke {color: whitesmoke;}
 /*MEDIA QUERIES 
 ------------------------*/
