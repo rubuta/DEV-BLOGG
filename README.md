@@ -14,4 +14,3 @@ This folder contains the the css and also the javascript.
   - [js](assets/js)
   - [plugins](assets/plugins)
 - [Posts](posts)
-  
