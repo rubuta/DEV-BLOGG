@@ -5,7 +5,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /*make the box model border box by default*/
 html {
   box-sizing: border-box;
+
 }
+*, ::before, *::after
 /*#endregion*/
 
 /*BASIC FORMATTING 
@@ -18,10 +20,10 @@ html{
 body{
   font-size: 1em;
   font-family: sans-serif;
-  color: #212121;
   line-height: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  
   /* control shift / for the comment; */
 }
 header{
@@ -42,7 +44,7 @@ a:hover {
   color: aqua;
 }
 section {
-  gap: 4;
+  gap: 10;
 }
 /**/
 button {
@@ -58,6 +60,11 @@ h1, h2, h3 {
   margin-top: 30px;
   
 }
+ul{ word-spacing: 30px;}
+ul li {
+  line-height: 1.8;
+}
+.ul li{display: inline-block; }
 
 p {
   margin-bottom: 1em; /*16px*/
@@ -65,8 +72,12 @@ p {
   line-height: 2;
 }
 footer { 
-  position: center center;
-  margin-left: 100px;
+  
+  color: rgba(255, 255, 255, 0.7);
+  background-color:#223142;
+  padding: .8rem 0;
+ 
+
 }
 /*HELPER CLASSES 
 ------------------------------*/
@@ -161,9 +172,49 @@ footer {
 
 /*LAYOUT 
 ------------------------*/
-ul{ word-spacing: 30px;}
-ul li{display: inline-block; }
-.header {background-image: url(../img/sta.jpg);}
-#whitesmoke {color: whitesmoke;}
+
+
+.left_content{
+  width: 100%;
+  max-width: 280px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  color: #fff;
+  background-color: #5fcb71;
+}
+.right_content{
+  padding-left: 280px;
+}
+.header{
+  background-color: #FAFAFA;
+  padding: 3rem 0 4rem;
+  height: 226px;
+  
+}
+.main
+{
+  background-color: #FFFFFF;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.circle {
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.flex {
+  display: flex;
+}
+.item{
+
+}
+.item figure {
+  width: 100%;
+  max-width: 110px;
+}
+
 /*MEDIA QUERIES 
 ------------------------*/
